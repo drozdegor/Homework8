@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузка файла</title>
+</head>
+<body>
+    <h1>Загрузка файла на сервер</h1>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="file_name">С каким именем сохранить файл на сервере:</label>
+            <input type="text" id="file_name" name="file_name" required>
+        </div>
+        <div>
+            <label for="content">Выберите файл:</label>
+            <input type="file" id="content" name="content" required>
+        </div>
+        <button type="submit">Загрузить</button>
+    </form>
+</body>
+</html>
